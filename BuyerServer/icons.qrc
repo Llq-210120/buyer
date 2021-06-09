@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/my.png</file>
+        <file>icons/setting.png</file>
+        <file>icons/grade.png</file>
+        <file>icons/office.png</file>
+        <file>icons/class.png</file>
+        <file>icons/exam_system.png</file>
+        <file>../images/shoppingcart.png</file>
+        <file>../images/store.png</file>
+        <file>../images/user.png</file>
+        <file>../images/book.png</file>
+        <file>../images/close.png</file>
+        <file>../images/xiugai.png</file>
+        <file>../images/loginbut.png</file>
+        <file>../images/close2.png</file>
+    </qresource>
+</RCC>

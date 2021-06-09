@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShoppingCartForm</class>
+ <widget class="QWidget" name="ShoppingCartForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>1000</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>180</number>
+   </attribute>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+font-family:&quot;Microsoft Yahei&quot;;
+
+}
+
+QTabWidget::pane{
+
+border-width:1px;
+
+border-style:solid;
+
+border-color:rgb(1, 124, 217);
+
+background:transparent;
+
+}
+
+QTabWidget::tab-bar{
+
+    alignment:left;
+
+}
+
+QTabBar::tab{
+
+/*background-color: rgb(1, 124, 217); */ /*浅蓝色*/
+
+background-color: rgb(4, 116, 191);  /*深蓝色*/
+
+color:white;
+
+min-width:30px;
+
+min-height:10px;
+
+border: 0px;
+
+padding:5px;
+
+}
+
+QTabBar::tab:selected{
+
+border-color: white;
+
+background-color: rgb(238, 159, 0); /*橘黄色*/
+
+color:white;
+
+}
+
+QTabBar::tab:!selected {
+
+margin-top: 5px;
+
+}
+
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_0">
+    <attribute name="title">
+     <string>未支付</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>960</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>1000</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>180</number>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="pb_submit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>450</y>
+       <width>121</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: gray;
+	background-color:#DCDCDC;
+
+}
+
+
+QPushButton:hover{
+
+
+color:#FFFFF0;
+background-color: rgb(174, 16, 39);
+
+}</string>
+     </property>
+     <property name="text">
+      <string>结算</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>410</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>全选</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>63</x>
+       <y>461</y>
+       <width>34</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>已选:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_checkNum">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>460</y>
+       <width>41</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">*{
+	color:rgb(255,0,0);
+	font-size:20px;
+	
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>414</x>
+       <y>461</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>￥</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_sum">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>450</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft Yahei</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">*{
+	color:rgb(255,0,0);
+	font-size:50px;
+	
+}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>已支付</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>960</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft Yahei</family>
+      </font>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>1000</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>180</number>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>400</y>
+       <width>641</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft Yahei</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">*{
+	font-size: 45px;
+}</string>
+     </property>
+     <property name="text">
+      <string>已付款，请等待店长发货</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>已发货</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>971</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>1000</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>180</number>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>已收货</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>960</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>1000</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>180</number>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

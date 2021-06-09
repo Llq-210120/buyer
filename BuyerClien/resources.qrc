@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../images/userInfo.png</file>
+        <file>../images/store2.png</file>
+        <file>../images/shopping.png</file>
+        <file>../images/close.png</file>
+        <file>../images/register.png</file>
+        <file>../images/close2.png</file>
+        <file>../images/loginbut.png</file>
+        <file>../images/login.jpg</file>
+        <file>../images/search.png</file>
+        <file>../images/loginpushButton.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	
+	border-radius:15px;
+
+}
+
+QWidget{
+	
+}
+QPushButton{
+    text-align: top right;
+    image-position: left center;
+    color:  #FFFFFF;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+    max-width: 100px;
+    min-width: 75px;
+    min-height: 25px;
+
+}
+
+QPushButton:hover{
+
+	border:1px solid blue;
+	image-position: right center;
+	background-color: #888888;
+	
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+
+	background-color: #818181;
+
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonFollowStyle</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionuser"/>
+   <addaction name="actionbuyer"/>
+   <addaction name="actionseller"/>
+   <addaction name="actionstore"/>
+   <addaction name="actionbook"/>
+  </widget>
+  <action name="actionseller">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/setting.png</normaloff>:/icons/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>seller</string>
+   </property>
+  </action>
+  <action name="actionstore">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/store2.png</normaloff>../images/store2.png</iconset>
+   </property>
+   <property name="text">
+    <string>store</string>
+   </property>
+  </action>
+  <action name="actionbook">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/images/book.png</normaloff>:/images/book.png</iconset>
+   </property>
+   <property name="text">
+    <string>book</string>
+   </property>
+  </action>
+  <action name="actionuser">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/grade.png</normaloff>:/icons/grade.png</iconset>
+   </property>
+   <property name="text">
+    <string>user</string>
+   </property>
+  </action>
+  <action name="actionbuyer">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/my.png</normaloff>:/icons/my.png</iconset>
+   </property>
+   <property name="text">
+    <string>buyer</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
